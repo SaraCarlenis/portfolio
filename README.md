@@ -6,6 +6,19 @@ Este projeto foi desenvolvido com o objetivo de apresentar minhas habilidades co
 reunindo informações sobre minha trajetória, projetos, redes sociais e um formulário de contato em uma interface moderna, responsiva e intuitiva.
 
 ---
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+---
+
+<div align="center">
+
+# 💜 Portfólio - Sara Cortes
+
+Desenvolvedora Full Stack em formação
+
+</div> 
+---
 
 ## ✨ Funcionalidades
 
