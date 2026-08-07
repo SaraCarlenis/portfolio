@@ -120,7 +120,7 @@ Para executar o projeto em ambiente local, siga os passos abaixo.
  
    ```bash
 
-   git clone https://github.com/rafaelq80/portfolio_tjs13.git
+   git clone https://github.com/SaraCarlenis/portfolio
 
    ```
  
@@ -128,7 +128,7 @@ Para executar o projeto em ambiente local, siga os passos abaixo.
  
    ```bash
 
-   cd portfolio_tjs13
+   cd portfolio
 
    ```
  
@@ -176,7 +176,7 @@ O site será aberto no navegador e todas as alterações poderão ser visualizad
  
 Este site está disponível publicamente através do **GitHub Pages**. Você pode acessar a versão online pelo link abaixo:
  
-🔗 https://rafaelq80.github.io/portfolio_tjs13
+🔗 https://github.com/SaraCarlenis/portfolio
  
 ------
  
