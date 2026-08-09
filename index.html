@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-
     <!-- Fontes do Google -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
  
-  <!-- Fonte do Google - Poppins -->
-<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-
+    <!-- Fonte do Google - Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <meta charset="UTF-8"> <!-- Significa: codificacao de caracteres usa o modelo universar (UTF-8) -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- definimos o tamanho do navegardor  -->
 
@@ -27,7 +25,7 @@
 
 
     <!-- CSS principal da página -->
-     <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
 
     <title>Portfólio da Sara Cortes </title> <!-- personalizamos o titulo da pagina -->
 </head>
@@ -37,15 +35,16 @@
     <header>
         <div class="menu-content">
         <!-- Titulo do cabeçalho -->
-        <a href="index.html">Portfólio da Sara</a>
+        <a href="index.html">Portfólio</a>
 
         <!-- Menu navegação -->
+         <!-- <ul> representa uma lista não ordenada -->
         <nav>
-            <ul> <!-- <ul> representa uma lista não ordenada -->
-                <li><a href="#hero>">Inicio</a></li>  <!-- <li> representam os itens da lista -->
+            <ul class="menu-list">
+                <li><a href="#hero>">Início</a></li>  <!-- <li> representam os itens da lista -->
                 <li><a href="#about">Sobre</a></li>
-                <li><a href="#projects">Projetos</a></a></li>
-                <li><a href="contacts">Contatos</a></a></li>
+                <li><a href="#project">Projetos</a></li>
+                <li><a href="#contacts">Contatos</a></li>
             </ul>
         </nav>
 
@@ -64,7 +63,7 @@
             <p>Construo soluções digitais que unem criatividade e tecnologia</p>
        
             <div class="buttons-container">
-                <a href="#contact" class="botao">entre em contato</a>
+                <a href="#contacts" class="botao">entre em contato</a>
                 <a href="#about" class="botao-outline">Saiba mais...</a>
             </div>
 
@@ -76,7 +75,6 @@
         <figure class="hero-image">
             <img
             src="./assets/img/foto_dev_woman.svg"
-            width="350px"
             alt="Foto da autora do site, Sara Cortes"
             class="float-animation"
             >
@@ -91,7 +89,6 @@
             <figure class="about-image">
                 <img
                 src="./assets/img/avatar_dev_woman.svg"
-                width="350px"
                 alt="Foto - Perfil da autora do site"
                 class="float-animation"
                 >
@@ -101,7 +98,7 @@
              <article class="about-content">
                 <h2>Sobre mim</h2>
                 <p>
-                    Meu nome é Sara Cortes e acredito que tecnologia é uma forma de contar histórias. 
+                    Meu nome é Sara Cortes. Acredito que tecnologia é uma forma de contar histórias. 
                     Como desenvolvedora Full Stack, busco unir lógica e estética para criar projetos 
                     que sejam úteis e ao mesmo tempo encantadores. Fora do código, gosto de aprender 
                     novas ferramentas e compartilhar conhecimento.
@@ -122,7 +119,7 @@
                      </div>
 
                      <!-- Dados do repositorio do GitHub -->
-                     <div class="data-conteiner">
+                     <div class="data-container">
 
                         <!-- Número de Seguidores -->
                         <div class="data-item" >
@@ -143,12 +140,12 @@
         </section>
 
         <!-- Seção de projetos -->
-         <section id="projects">
+         <section id="project" class="section-container project-container">
             
             <h2>Meus Projetos</h2>
             
                 <!-- Swiper Container -->
-            <div class="swiper projects-swiper">
+            <div class="swiper project-swiper">
             <div class="swiper-wrapper">
             
                 <div class="swiper-slide">
@@ -158,7 +155,6 @@
             <!-- Ícone da Tecnologia padrão do projeto -->
                 <figure class="project-image">
                 <img src="./assets/icons/languages/github.svg"
-                    width="250px"
                     alt="Ícone do GitHub"
                 >
                 </figure>
@@ -204,7 +200,7 @@
         </section>
 
         <!-- Seção de contatos -->
-         <section id="contact" class="section-container contact-container">
+         <section id="contacts" class="section-container contact-container">
 
             <!-- Redes Sociais -->
              <article>
@@ -215,22 +211,35 @@
                 <!-- Links para as Redes Sociais -->
                  <div class="section-container">
 
-                    <a href="#https://www.linkedin.com/in/sara-hurtado-cortes/" target="_blank" class="social-icon" aria-label="LinkedIn">
-                        <img
-                        src="./assets/icons/social/linkedin.svg"
-                        alt="Link do Linkedin"
-                        >
-                    <a href="#https://github.com/SaraCarlenis" target="_blank" class="social-icon" aria-label="GitHub">
-                        <img
-                        src="./assets/icons/social/github.svg"
-                        alt="Link do GitHub"
-                    >
-                    <a href="#https://www.instagram.com/s.corte_/" target="_blank" class="social-icon" aria-label="Instragram">
-                        <img
-                        src="./assets/icons/social/instagram.svg"
-                        alt="Link para o Instragram"
-                    >
+                    <a href="https://www.linkedin.com/in/sara-hurtado-cortes/"
+                        target="_blank"
+                        class="social-icon"
+                        aria-label="LinkedIn">
+
+                <img src="./assets/icons/social/linkedin.svg"
+                         alt="LinkedIn">
+
                     </a>
+
+                    <a href="https://github.com/SaraCarlenis"
+                        target="_blank"
+                        class="social-icon"
+                        aria-label="GitHub">
+
+                <img src="./assets/icons/social/github.svg"
+                        alt="GitHub">
+                    </a>
+
+                    <a href="https://www.instagram.com/s.corte_/"
+                        target="_blank"
+                        class="social-icon"
+                        aria-label="Instagram">
+
+                <img src="./assets/icons/social/instagram.svg"
+                        alt="Instagram">
+
+                    </a>
+
                  </div>
             </article>
 
@@ -256,14 +265,13 @@
                 <button class="botao" type="submit">Enviar Mensagem</button>
 
               </Form>
-
             
         </section>
     </main>
 
     <!-- Roda pé da minha página -->
      <footer>
-        <p>Desenvolvido por Sara Cortes.</p>
+        <p>Desenvolvido por Sara Cortes - 2026</p>
      </footer>
 
 </body>
