@@ -64,7 +64,7 @@
     --radius-full: 50%;
  
     /* Animação Padrão */
-    --transition-default: all 0.3s ease;
+    --transition-default: all 0.3 ease;
 }
  
 html {
@@ -227,7 +227,7 @@ header a:hover {
  
 .hero-content p,
 .about-content p,
-.contacts-info p {
+.contact-info p {
   font-size: var(--text-lg);
   color: var(--gray-400);
 }
@@ -259,7 +259,7 @@ header a:hover {
  
 /* Usa animação */
 .float-animation {
-  animation: float 3s ease-in-out infinite;
+  animation: float 15s ease-in-out infinite;
 }
 
 /* About é da turma, pegar exemplos de como fizemos o Hero */
@@ -499,11 +499,11 @@ header a:hover {
 
 /* Configurando as Redes Sociais */
 
-.contacts-info h2 {
+.contact-info h2 {
     margin-bottom: var(--spacing-md);
 }
 
-.contacts-info p {
+.contact-info p {
     margin-bottom: var(--spacing-lg);
 }
 
@@ -752,7 +752,7 @@ footer {
   display: none;
 }
 
-/* Responsividade Tablet - Seção Contacts */
+/* Responsividade Tablet - Seção Contact */
 
 .contact-container {
   grid-template-columns: 1fr;
