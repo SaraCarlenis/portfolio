@@ -65,11 +65,12 @@ async function getAboutGitHub(){
                             <span class="data-label" >Seguidores</span>
                         </div>
 
-                        <!-- Número de Repositórios Públicos -->
-                         <div class="data-item" >
-                            <span class="data-number" >${perfil.public_repos}</span>
-                            <span class="data-label" >Repositórios</span>
-                         </div>
+                         <!-- Numero de Repositórios Públicos -->
+                        <div class="data-item">
+                        <span class="data-number">${perfil.public_repos}</span>
+                        <span class="data-label">Repositórios</span>
+                     </div>
+
                      </div>
 
                 </div>
@@ -78,7 +79,7 @@ async function getAboutGitHub(){
         `
 
     }catch(error){
-        console.error("Erros ao buscar dados no GitHub")
+        console.error("Erros ao buscar dados no GitHub", error)
     }
 }
 
@@ -202,7 +203,7 @@ async function getProjectsGitHub() {
     iniciarSwiper()
 
     }catch (error){
-        console.error("Erro ao buscar os dados dos projetos no GitHub")
+        console.error("Erro ao buscar os dados dos projetos no GitHub", error)
     }
 }
 
