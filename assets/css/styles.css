@@ -13,31 +13,31 @@
  
 /* Variáveis */
 :root {
-    --purple-50: #f4eaff;
-    --purple-100: #e9dcfa;
-    --purple-200: #cdb3f0;
-    --purple-300: #b186e5;
-    --purple-400: #9460db;
-    --purple-500: #6b36c8;
-    --purple-600: #5b2ca0;
-    --purple-700: #4c2177;
-    --purple-800: #441f88;
-    --purple-900: #2a0e4d;
-    --purple-950: #1a0730;
+    --copper-50: #706111;
+    --copper-100:#ca9b17;
+    --copper-200:#909337;
+    --copper-300: #a19244;
+    --copper-400: #95874b;
+    --copper-500: #ae7448;
+    --copper-600: #8f662a;
+    --copper-700: #644324;
+    --copper-800: #563413;
+    --copper-900: #c4c88a;
+    --copper-950: #c0c03a;
  
     /* Cores Neutras */
-    --gray-200: #e8e8e8;
-    --gray-400: #505861;
-    --black: #171717;
-    --white: #FAF7FF;
+    --gray-200: #dac7b8;
+    --gray-400: #593411;
+    --black: #dd7f0b;
+    --white: #f4efe6;
  
     /* Cores de Estado */
     --error: #e63946;
  
     /* Sombras */
     --shadow-sm: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.05);
-    --shadow-md: 0 0.25rem 0.75rem rgba(107, 54, 200, 0.3);
-    --shadow-lg: 0 0.5rem 1.5rem rgba(107, 54, 200, 0.2);
+    --shadow-md: 0 0.25rem 0.75rem rgba(190, 200, 54, 0.3);
+    --shadow-lg: 0 0.5rem 1.5rem rgba(200, 185, 54, 0.2);
 
  
     /* Espaçamentos */
@@ -115,27 +115,27 @@ main {
 }
  
 .botao{
-  border-color: var(--purple-700);
-  background-color: var(--purple-500);
+  border-color: var(--copper-700);
+  background-color: var(--copper-500);
   color: var(--white);
 }
  
 .botao:hover{
-  border-color: var(--purple-800);
-  background-color: var(--purple-700);
+  border-color: var(--copper-800);
+  background-color: var(--copper-700);
   box-shadow: var(--shadow-md);
   transform: translateY(-0.25rem);
 }
  
 .botao-outline{
-  border-color: var(--purple-500);
+  border-color: var(--copper-500);
   background-color: transparent;
-  color: var(--purple-500);
+  color: var(--copper-500);
 }
  
 .botao-outline:hover{
-  border-color: var(--purple-500);
-  background-color: var(--purple-500);
+  border-color: var(--copper-500);
+  background-color: var(--copper-500);
   color: var(--white);
   transform: translateY(-0.25rem);
 }
@@ -161,7 +161,7 @@ header{
   height: 5rem;
   border-bottom: var(--spacing-xs) solid var(--gray-200);
   box-shadow: var(--shadow-sm);
-  background-color: var(--purple-800);
+  background-color: var(--copper-800);
 }
  
 header a {
@@ -171,7 +171,7 @@ header a {
 }
  
 header a:hover {
-  color: var(--purple-100);
+  color: var(--copper-100);
 }
  
 #titulo{
@@ -290,7 +290,7 @@ header a:hover {
     width: 22rem;
     height: 22rem;
     border-radius: 50%;
-    border: 0.4rem solid var(--purple-500);
+    border: 0.4rem solid var(--copper-500);
     object-fit: cover;
 }
 
@@ -298,7 +298,7 @@ header a:hover {
 
 .about-content h2 {
     margin-bottom: var(--spacing-lg);
-    color: var(--purple-800);
+    color: var(--copper-800);
     font-size: var(--text-3xl);
 }
 
@@ -316,7 +316,7 @@ header a:hover {
 .data-number {
     font-size: var(--text-2xl);
     font-weight: 700;
-    color: var(--purple-500);
+    color: var(--copper-500);
 }
 
 .data-label {
@@ -379,8 +379,8 @@ header a:hover {
     height: 10rem;
     background: linear-gradient(
         135deg, 
-        var(--purple-50) 0%, 
-        var(--purple-100) 100%
+        var(--copper-50) 0%, 
+        var(--copper-100) 100%
     );
 }
 
@@ -423,10 +423,10 @@ header a:hover {
 .tag {
     padding: 0.375rem;
     border-radius: var(--radius-sm);
-    background-color: var(--purple-100);
+    background-color: var(--copper-100);
     font-size: var(--text-sm);
     font-weight: 600;
-    color: var(--purple-800);
+    color: var(--copper-800);
 }
 
 .project-buttons {
@@ -451,19 +451,31 @@ header a:hover {
 /* Botões do Swiper (navegação) */
 .swiper-button-next,
 .swiper-button-prev {
-    width: 3rem;
-    height: 3rem;
+  position: absolute;
+  top: 50%; /* centraliza verticalmente */
+  transform: translateY(-50%);
+  z-index: 10;
+  width: -3rem;
+  height: -3rem;
+}
+
+.swiper-button-next {
+  right: 1rem;
+}
+
+.swiper-button-prev {
+  left: 1rem;
 }
  
 .swiper-button-next:after,
 .swiper-button-prev:after {
-    font-size: var(--text-lg);
-    color: var(--purple-500);
+    color: var(--black); /* ícone dourado/branco */
+    font-size: 1.9rem;
 }
  
 .swiper-button-next:hover:after,
 .swiper-button-prev:hover:after {
-    color: var(--purple-800);
+    color: var(--black);
 }
  
 /* Indicadores de paginação */
@@ -477,7 +489,7 @@ header a:hover {
 .swiper-pagination-bullet-active {
     width: var(--spacing-lg);
     border-radius: var(--radius-sm);
-    background-color: var(--purple-500);
+    background-color: var(--copper-500);
 }
 
 /* Seção de Contatos */
@@ -496,7 +508,7 @@ header a:hover {
     margin-bottom: var(--spacing-md);
     font-size: var(--text-3xl);
     font-weight: 700;
-    color: var(--purple-800);
+    color: var(--copper-800);
 }
 
 /* Configurando as Redes Sociais */
@@ -567,7 +579,7 @@ form textarea {
 
 form input:focus,
 form textarea:focus {
-    border-color: var(--purple-500);
+    border-color: var(--copper-500);
     outline: none;
 }
 
@@ -586,7 +598,7 @@ form span {
  
 footer {
     padding: 2.5rem;
-    background: linear-gradient(to right, var(--purple-500), var(--purple-800));
+    background: linear-gradient(to right, var(--copper), var(--chocolate));
     font-weight: 600;
     text-align: center;
     color: var(--white);
@@ -616,7 +628,7 @@ footer {
 .success-content h1 {
     font-size: var(--text-3xl);
     font-weight: 700;
-    color: var(--purple-800);
+    color: var(--copper-800);
 }
 
 .success-content h2 {
@@ -631,7 +643,7 @@ footer {
     width: 7.5rem;
     height: 7.5rem;
     border-radius: var(--radius-full);
-    background-color: var(--purple-100);
+    background-color: var(--copper-100);
 }
 
 .success-icon img {
@@ -640,11 +652,11 @@ footer {
     filter: brightness(0) 
             saturate(100%) 
             invert(11%) 
-            sepia(69%) 
-            saturate(3759%) 
+            sepia(10%) 
+            saturate(900%) 
             hue-rotate(256deg) 
             brightness(101%) 
-            contrast(96%);
+            contrast(90%);
 }
 
 /* Responsividade Tablet (até 1024px) */
