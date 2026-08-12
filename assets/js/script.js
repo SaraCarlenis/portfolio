@@ -2,7 +2,7 @@
 const about = document.querySelector("#about")
 
 //Selecionar a Seção swiper
-const swiperWrapper = document.querySelector(".swiper-wrapper")   
+const swiperWrapper = document.querySelector(".projects-swiper .swiper-wrapper")   
 
 // Formulário
 const formulario = document.querySelector('#formulario')
