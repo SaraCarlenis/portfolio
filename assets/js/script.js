@@ -29,8 +29,7 @@ async function getAboutGitHub(){
             <figure class="about-image">
                 <img
                 src="${perfil.avatar_url}"
-                alt="Foto - Perfil da autora do site"
-                class="${perfil.name}"
+                alt="${perfil.name}"}"
                 >
             </figure>
 
