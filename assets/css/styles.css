@@ -64,7 +64,7 @@
     --radius-full: 50%;
  
     /* Animação Padrão */
-    --transition-default: all 0.3 ease;
+    --transition-default: all 0.3s ease;
 }
  
 
@@ -175,7 +175,7 @@ header a:hover {
 }
  
 #titulo{
-  font-size: var(--text-2xl);
+  font-size: var(--text-lg);
   font-weight: 700;
 }
  
@@ -267,44 +267,66 @@ header a:hover {
 /* About é da turma, pegar exemplos de como fizemos o Hero */
 
 .about-container {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
+    display: flex;
+    align-items: center;
     gap: var(--spacing-2xl);
-
-    background-color: var(--gray-200);
-    border-radius: var(--radius-lg);
-
+    margin: var(--spacing-2xl) auto;
     padding: var(--spacing-2xl);
+    border-radius: var(--radius-lg);
+    background-color: var(--gray-200);
 }
 
 /* Imagem */
 
 .about-image {
     display: flex;
+    flex: 0 0 17.5rem;
     justify-content: center;
-    align-items: center;
-    margin: 0;
 }
 
 .about-image img {
-    width: 22rem;
-    height: 22rem;
-    border-radius: 50%;
-    border: 0.4rem solid var(--copper-500);
-    object-fit: cover;
+    width: 100%;
+    border: 0.35rem solid var(--copper-500);
+    border-radius: var(--radius-full);
+    box-shadow: var(--shadow-lg);
+}
+
+.about-content {
+    flex: 1;
 }
 
 /* Conteúdo */
 
-.about-content h2 {
-    margin-bottom: var(--spacing-lg);
-    color: var(--copper-800);
+.about-content h2,
+.projects-container h2,
+.contact-info h2 {
+    margin-bottom: var(--spacing-md);
     font-size: var(--text-3xl);
+    font-weight: 700;
+    color: var(--copper-800);
 }
 
 .about-content p {
-    margin-bottom: var(--spacing-lg);
-    line-height: 1.6;
+    margin-bottom: var(--spacing-sm);
+    text-align: justify;
+}
+
+.about-buttons-data {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-lg);
+}
+
+.about-buttons-data .botao {
+    margin-right: auto;
+}
+
+.data-container {
+    display: flex;
+    gap: var(--spacing-lg);
+    margin-top: 0;
 }
 
 .data-item {
@@ -316,12 +338,14 @@ header a:hover {
 .data-number {
     font-size: var(--text-2xl);
     font-weight: 700;
+    text-align: center;
     color: var(--copper-500);
 }
 
 .data-label {
     font-size: var(--text-base);
-    color: var(--gray-700);
+    text-align: center;
+    color: var(--gray-400);
 }
 
 /* Botões + dados */
@@ -455,8 +479,8 @@ header a:hover {
   top: 50%; /* centraliza verticalmente */
   transform: translateY(-50%);
   z-index: 10;
-  width: -3rem;
-  height: -3rem;
+  width: 3rem;
+  height: 3rem;
 }
 
 .swiper-button-next {
@@ -779,7 +803,7 @@ footer {
 
 .project-swiper {
   margin: 0;
-  padding: var(--shadow-sm) var(--spacing-lg) 2.5rem;
+  padding: var(--spacing-sm) var(--spacing-lg) 2.5rem;
 }
 
 .project-card {
@@ -802,7 +826,7 @@ footer {
   overflow: hidden;
 }
 
-.project.project-tags {
+.project-tags {
   min-height: 2.5rem;
   align-items: flex-start;
 }
@@ -813,7 +837,7 @@ footer {
   align-items: stretch;
 }
 
-.swipper-slide {
+.swiper-slide {
   display: flex;
   justify-content: center;
   align-items: stretch;
@@ -840,7 +864,7 @@ footer {
 
 .success-content {
   padding: var(--spacing-xl) var(--spacing-md);
-  min-height: calc(100vh - 10 rem);
+  min-height: calc(100vh - 10rem);
 }
 
 .success-content {
@@ -1023,7 +1047,7 @@ footer {
     }
 
     form label {
-        font-size: var(--text-base);
+        font-size: 0.95rem;
     }
 
     form input,
