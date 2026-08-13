@@ -163,7 +163,7 @@ O site será aberto no navegador e todas as alterações poderão ser visualizad
  
 - Layout **responsivo**
 
-- Paleta de cores harmônica com tons de roxo e cinza
+- Paleta de cores harmônica com tons de cobre, dourado e marrom  
 
 - **Animações suaves** (transições e efeitos de flutuação)
 
