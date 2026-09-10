@@ -40,6 +40,8 @@ async function getAboutGitHub(){
                     Sou formada em Análise e Desenvolvimento de Sistemas e atualmente me especializo em Java Full Stack. 
                     Minha experiência com suporte técnico e suporte a aplicações fortaleceu minha capacidade de resolver problemas, 
                     entender necessidades de usuários e transformar desafios em soluções.
+                    Além da tecnologia, falo espanhol, português e inglês, o que me permite me comunicar 
+                    em diferentes contextos e ambientes multiculturais.
                 </p>
                 <p>
                     Hoje, direciono minha carreira para o desenvolvimento de software, unindo experiência prática em tecnologia, 
@@ -52,7 +54,7 @@ async function getAboutGitHub(){
                     <!-- Links -->
                      <div class="buttons-container">
                         <a href="${perfil.html_url}" target="_blank" class="botao" >GitHub</a>
-                        <a href="https://ik.imagekit.io/lojagames/Sara%20Hurtado%20CV.pdf" target="_blank" class="botao-outline">Currículo</a> <!-- O target blank significa que vai abrir uma nova guia -->
+                        <a href="https://ik.imagekit.io/lojagames/Doc/Sara%20Hurtado.cv.pdf" target="_blank" class="botao-outline">Currículo</a> <!-- O target blank significa que vai abrir uma nova guia -->
                      </div>
 
                      <!-- Dados do repositorio do GitHub -->
