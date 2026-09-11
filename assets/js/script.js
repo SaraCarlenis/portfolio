@@ -54,7 +54,7 @@ async function getAboutGitHub(){
                     <!-- Links -->
                      <div class="buttons-container">
                         <a href="${perfil.html_url}" target="_blank" class="botao" >GitHub</a>
-                        <a href="https://drive.google.com/file/d/1Ey1yIChlJVHZ0nCyHvdl8AKcbjEqPX4O/view?usp=sharing" target="_blank" class="botao-outline">Currículo</a> <!-- O target blank significa que vai abrir uma nova guia -->
+                        <a href="https://drive.google.com/file/d/1B7d9IPMqnfFgQAqTLssZ115YPC6UfC_9/view?usp=sharing" target="_blank" class="botao-outline">Currículo</a> <!-- O target blank significa que vai abrir uma nova guia -->
                      </div>
 
                      <!-- Dados do repositorio do GitHub -->
